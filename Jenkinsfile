@@ -6,16 +6,19 @@ pipeline {
     steps{
       deleteDir()
       checkout scm
-      script {
-        echo "Loading json config: ${env.WORKSPACE}/pipelineConfig.json"
-        configObject = readJSON file: "${env.WORKSPACE/pipelineConfig.json}"
+      //script {
+        //echo "Loading json config: ${env.WORKSPACE}/pipelineConfig.json"
+       // configObject = readJSON file: "${env.WORKSPACE/pipelineConfig.json}"
         //LoadJsonConfig()
-      }
+      //}
     }
     }
     stage('Build NPM'){
+        tools {
+            nodejs '16.15.1'
+        }
         steps{
-          buildNpm(configObject)
+          buildNpm()
         }
       }
     }
