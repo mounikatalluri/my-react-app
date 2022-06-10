@@ -9,7 +9,7 @@ pipeline {
       script {
         echo "Loading json config: ${env.WORKSPACE}/pipelineConfig.json"
         configObject = readJSON file: "${env.WORKSPACE/pipelineConfig.json}"
-        LoadJsonConfig()
+        //LoadJsonConfig()
       }
     }
     }
@@ -20,4 +20,3 @@ pipeline {
       }
     }
   }
-}
