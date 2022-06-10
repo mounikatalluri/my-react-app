@@ -1,0 +1,9 @@
+{
+  "Application Name":"React App"
+  "Application Type":"npm"
+  "stages":{
+    "npm-build":{
+      "source-dir":"src"
+    }
+  }
+}
