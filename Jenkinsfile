@@ -1,7 +1,6 @@
 @Library('QT-jenkins-shared-libraries') _
 pipeline {
   agent any
-  //tools { nodejs 'node14'}
   stages{
     stage('Load Json Config'){
     steps{
@@ -15,10 +14,6 @@ pipeline {
     }
     }
     stage('Build NPM'){
-      when {
-        anyOf {
-          environment name: 'operation', value: 'build';
-        }
         steps{
           buildNpm(configObject)
         }
