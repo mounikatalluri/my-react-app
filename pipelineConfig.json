@@ -4,7 +4,7 @@
   "stages":{
     "npm-build":{
       "source-dir":"src",
-      "artifact-dir":"",
+      "artifact-dir":"target",
       "sonar":true,
       "sonar-exclusions":"",
       "sonar-coverage-exclusions":"",
