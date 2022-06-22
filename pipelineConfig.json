@@ -6,7 +6,7 @@
       "source-dir":"src",
       "artifact-dir":"",
       "sonar":true,
-      "sonar-exclusions":"",
+      "sonar-exclusions":"pipelineConfig.json",
       "sonar-coverage-exclusions":"",
       "coverage-report-path":""
     },
