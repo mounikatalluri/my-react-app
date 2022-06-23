@@ -13,7 +13,7 @@
         //}
       }
     }
-    stage('Build NPM'){
+    stage('Build NPM and Sonar'){
       tools {
         nodejs '16.15.1'
       }
